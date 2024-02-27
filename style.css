@@ -1,0 +1,263 @@
+body {
+  background-color: #f8f8f2;
+  margin: 0;
+}
+
+.json {
+  background-color: #282a36;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8vw;
+  text-decoration: none;
+  height: 100%;
+  padding: 17px 17px 8px 17px;
+}
+
+.over.one {
+  background-color: #4E526A;
+  padding: 17px 17px 0 17px;
+}
+.over.two {
+  background-color: #DCDCBC;
+  padding: 0 17px 17px 17px;
+}
+
+.project {
+  background-color: #f8f8f2;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project .title {
+  padding: 100px 0 0 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "eurostile", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.project .situation {
+  margin: 15px 25px 40px 25px;
+  width: 100%;
+  font-family: "eurostile", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.project .grille {
+  max-width: 2500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.case {
+  margin: 12px 12px 12px 12px;
+  background-color: #ff5555;
+  background-repeat: no-repeat;
+  width: 80vw;
+  height: 40vw;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+.case .overlay {
+  justify-content: center;
+  position: initial;
+  background-color: #CECEA1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.case .overlay h1 {
+  font-size: 32px;
+  padding: 0 0 10px 0;
+  margin: 0%;
+}
+.case .overlay .description {
+  font-size: 1.3rem;
+  margin: 5px 15px 15px 15px;
+}
+.case .overlay .tech {
+  font-weight: bold;
+}
+.case:hover .overlay {
+  opacity: 1;
+}
+.case.promocord {
+  background-color: #eb459e;
+  background-image: url("src/logo_white_large.png");
+  background-size: 60%;
+  background-position: 50%;
+}
+.case.promocord:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+.case.zoz {
+  background-color: #D6D7D6;
+  background-image: url("src/zoz.png");
+  background-size: 60%;
+  background-position: 50%;
+}
+.case.zoz:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+.case.site {
+  background-color: #d1d2f9;
+  background-image: url("src/Prompt.png");
+  background-size: 65%;
+  background-position: 50%;
+}
+.case.site:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+.case.ionic {
+  background-color: rgba(255, 107, 107, 0.7725490196); /*BBA0B2*/
+  background-image: url("src/ionic-Logo.svg");
+  background-size: 45%;
+  background-position: 50%;
+}
+.case.ionic:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+.case.morpion {
+  background-color: #85B1FF;
+  background-image: url("src/logotictac.png");
+  background-size: 55%;
+  background-position: 50%;
+}
+.case.morpion:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+
+@media only screen and (max-width: 420px) {
+  .case {
+    height: 60vw;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .project .title {
+    font-size: 35px;
+  }
+  .project .situation {
+    font-size: 22px;
+  }
+  .case .overlay h1 {
+    font-size: 6vw;
+  }
+  .case .overlay .description {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .json {
+    font-size: 22px;
+  }
+  .project .title {
+    font-size: 37px;
+  }
+  .project .situation {
+    font-size: 24px;
+  }
+  .case {
+    width: 600px;
+    height: 300px;
+  }
+  .case .overlay h1 {
+    font-size: 5vw;
+  }
+  .case .overlay .description {
+    font-size: 3.5vw;
+  }
+  .case.promocord {
+    background-size: 55%;
+  }
+  .case.zoz {
+    background-size: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project .title {
+    font-size: 39px;
+  }
+  .project .situation {
+    font-size: 26px;
+  }
+  .case {
+    height: 250px;
+    width: 450px;
+  }
+  .case .overlay h1 {
+    font-size: 40px;
+  }
+  .case .overlay .description {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .json {
+    font-size: 24px;
+  }
+  .case {
+    height: 350px;
+    width: 30%;
+    max-width: 640px;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  .json {
+    font-size: 28px;
+  }
+}
+.comment {
+  color: #6272a4;
+}
+
+.colorfont {
+  color: #919cbd;
+}
+
+.pink {
+  color: #ff79c6;
+}
+
+.yellow {
+  color: #d1fa81;
+}
+
+.cyan {
+  color: #8be9fd;
+}
+
+.red {
+  color: #ff5555;
+}
+
+.orange {
+  color: #ffb86c;
+}
+
+.purple {
+  color: #bd93f9;
+}
+
+.green {
+  color: #50fa7b;
+}
+
+.white {
+  color: #f8f8f2;
+}
+
+/*# sourceMappingURL=style.css.map */

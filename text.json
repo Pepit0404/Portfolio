@@ -1,0 +1,15 @@
+{
+    "name":     "Samuel Pinto",
+
+    "email":    "samuel_pinto@laposte.net",
+    "lieux":    "Clermont-Ferrand, France",
+
+    "experience": {
+        ""
+    },
+
+    "lien": {
+        "site-web": "?",
+        "github":   "?"
+    }
+}
