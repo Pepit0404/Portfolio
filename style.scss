@@ -46,6 +46,7 @@ body {
         text-align: center;
     }
     .grille{
+        padding-bottom: 15px;
         max-width: 2500px;
         width: 100%;
         display: flex;
@@ -84,6 +85,11 @@ body {
             font-size: 32px;
             padding: 0 0 10px 0;
             margin: 0%;
+            .link{
+                text-decoration: none;
+                font-style: normal;
+                color: #000;
+            }
         }
         .description{
             font-size: 1.3rem;
@@ -148,6 +154,15 @@ body {
         background-size: 55%;
         background-position: 50%;
 
+        &:hover{
+            transition: .4s ease;
+            background-size: 40%;
+        }
+    }
+    &.C{
+        background-image: url("src/logo-C.png");
+        background-size: 45%;
+        background-position: 50%;
         &:hover{
             transition: .4s ease;
             background-size: 40%;

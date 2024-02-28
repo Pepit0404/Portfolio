@@ -44,6 +44,7 @@ body {
   text-align: center;
 }
 .project .grille {
+  padding-bottom: 15px;
   max-width: 2500px;
   width: 100%;
   display: flex;
@@ -79,6 +80,11 @@ body {
   font-size: 32px;
   padding: 0 0 10px 0;
   margin: 0%;
+}
+.case .overlay h1 .link {
+  text-decoration: none;
+  font-style: normal;
+  color: #000;
 }
 .case .overlay .description {
   font-size: 1.3rem;
@@ -137,6 +143,15 @@ body {
   background-position: 50%;
 }
 .case.morpion:hover {
+  transition: 0.4s ease;
+  background-size: 40%;
+}
+.case.C {
+  background-image: url("src/logo-C.png");
+  background-size: 45%;
+  background-position: 50%;
+}
+.case.C:hover {
   transition: 0.4s ease;
   background-size: 40%;
 }
@@ -258,6 +273,4 @@ body {
 
 .white {
   color: #f8f8f2;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
