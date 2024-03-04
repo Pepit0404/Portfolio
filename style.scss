@@ -89,6 +89,9 @@ body {
                 text-decoration: none;
                 font-style: normal;
                 color: #000;
+            
+                //pointer-events: none;
+                //cursor: default;
             }
         }
         .description{
@@ -102,6 +105,13 @@ body {
     }
     &:hover .overlay{
         opacity: 1;
+
+        // h1{
+        //     .link{
+        //         pointer-events: auto;
+        //         cursor: pointer;
+        //     }
+        // }
     }
 
     &.promocord{
