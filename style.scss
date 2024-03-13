@@ -6,7 +6,7 @@ body {
 .json{
     background-color: #282a36;
     font-family: "Courier New", Courier, monospace;
-    font-size: 2.8vw ;
+    font-size: 2.8vw;
     text-decoration: none;
 
     height: 100%;
@@ -89,12 +89,14 @@ body {
                 text-decoration: none;
                 font-style: normal;
                 color: #000;
+                
+                pointer-events: none;
+                cursor: default;
             }
         }
         .description{
-            font-size: 1.3rem;
+            font-size: 1rem;
             margin: 5px 15px 15px 15px;
-
         }
         .tech{
             font-weight: bold;
@@ -102,6 +104,10 @@ body {
     }
     &:hover .overlay{
         opacity: 1;
+
+        h1{
+            
+        }
     }
 
     &.promocord{
@@ -172,7 +178,36 @@ body {
 
 @media only screen and (max-width: 420px){
     .case{
+        height: 80vw;
+        .overlay{
+            .description{
+                font-size: 1rem;
+            }
+        }
+        &.C{
+            .overlay{
+                h1{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .json{
+        font-size: 3vw;
+        div{
+            margin: 10px 0 10px 0;
+        }
+    }
+    .case{
         height: 60vw;
+        .overlay{
+            .description{
+                font-size: 1.3rem;
+            }
+        }
     }
 }
 
@@ -185,12 +220,19 @@ body {
             font-size: 22px;
         }
     }
-    .case .overlay{
-        h1{
-            font-size: 6vw;
-        }
-        .description{
-            font-size: 4vw;
+    .case{ 
+        height: 60vw;
+        .overlay{
+            h1{
+                font-size: 6vw;
+                .link{
+                    pointer-events: all;
+                    cursor: pointer;
+                }
+            }
+            .description{
+                font-size: 4vw;
+            }
         }
     }
 }
