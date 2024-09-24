@@ -6,7 +6,7 @@ body {
 .json{
     background-color: #282a36;
     font-family: "Courier New", Courier, monospace;
-    font-size: 2.8vw;
+    font-size: .8rem;
     text-decoration: none;
 
     height: 100%;
@@ -196,7 +196,7 @@ body {
 
 @media only screen and (max-width: 450px){
     .json{
-        font-size: 3vw;
+        font-size: .8rem;
         div{
             margin: 10px 0 10px 0;
         }
@@ -212,6 +212,9 @@ body {
 }
 
 @media only screen and (min-width: 576px){
+    .json{
+        font-size: 1.2rem;
+    }
     .project{
         .title{
             font-size: 35px;
@@ -239,7 +242,7 @@ body {
 
 @media only screen and (min-width: 768px){
     .json{
-        font-size: 22px;
+        font-size: 1.2rem;
     }
     .project{
         .title{
