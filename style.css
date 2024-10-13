@@ -11,6 +11,11 @@ body {
   height: 100%;
   padding: 17px 17px 8px 17px;
 }
+.json .openLink {
+  filter: invert(73%) sepia(17%) saturate(5343%) hue-rotate(290deg) brightness(102%) contrast(105%);
+  width: 1.2rem;
+  display: inline-block;
+}
 
 .over.one {
   background-color: #4E526A;
@@ -88,6 +93,9 @@ body {
   pointer-events: none;
   cursor: default;
 }
+.case .overlay h1 .link img {
+  display: none;
+}
 .case .overlay .description {
   font-size: 1rem;
   margin: 5px 15px 15px 15px;
@@ -98,13 +106,13 @@ body {
 .case:hover .overlay {
   opacity: 1;
 }
-.case.promocord {
-  background-color: #eb459e;
-  background-image: url("src/logo_white_large.png");
+.case.kuturl {
+  background-color: #282a36;
+  background-image: url("src/kuturl.png");
   background-size: 60%;
   background-position: 50%;
 }
-.case.promocord:hover {
+.case.kuturl:hover {
   transition: 0.4s ease;
   background-size: 40%;
 }
@@ -202,6 +210,10 @@ body {
   .case .overlay h1 .link {
     pointer-events: all;
     cursor: pointer;
+  }
+  .case .overlay h1 .link img {
+    width: 1.5rem;
+    display: inline;
   }
   .case .overlay .description {
     font-size: 4vw;

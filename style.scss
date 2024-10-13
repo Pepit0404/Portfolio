@@ -11,7 +11,12 @@ body {
 
     height: 100%;
     padding: 17px 17px 8px 17px;
-    
+
+    .openLink{
+        filter: invert(73%) sepia(17%) saturate(5343%) hue-rotate(290deg) brightness(102%) contrast(105%);
+        width: 1.2rem;
+        display: inline-block;
+    }
 }
 .over{
     &.one{
@@ -92,6 +97,10 @@ body {
                 
                 pointer-events: none;
                 cursor: default;
+
+                img{
+                    display: none;
+                }
             }
         }
         .description{
@@ -110,9 +119,9 @@ body {
         }
     }
 
-    &.promocord{
-        background-color: #eb459e;
-        background-image: url("src/logo_white_large.png");
+    &.kuturl{
+        background-color: #282a36;
+        background-image: url("src/kuturl.png");
         background-size: 60%;
         background-position: 50%;
 
@@ -231,6 +240,11 @@ body {
                 .link{
                     pointer-events: all;
                     cursor: pointer;
+
+                    img{
+                        width: 1.5rem;
+                        display: inline;
+                    }
                 }
             }
             .description{
